@@ -46,11 +46,11 @@ function createModal(imageDiv) {
 let photos = document.querySelectorAll('.image');
 
 function addClickListener() {
-  for ( let photo of photos) {
-    photo.children[0].addEventListener('click', function(e) {
+  for (let i = 0; i < photos.length; i++) {
+    photos[i].children[0].addEventListener('click', function(e) {
       e.preventDefault();
       // setting variables for each  photo
-      createModal(photo);
+      createModal(photos[i]);
 
       let modal = document.getElementById('modal');
       let dismissModal = document.getElementById('close-modal');

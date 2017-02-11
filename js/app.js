@@ -39,59 +39,38 @@ function createModal(imageDiv) {
 var photos = document.querySelectorAll('.image');
 
 function addClickListener() {
-  var _iteratorNormalCompletion = true;
-  var _didIteratorError = false;
-  var _iteratorError = undefined;
+  var _loop = function _loop(i) {
+    photos[i].children[0].addEventListener('click', function (e) {
+      e.preventDefault();
+      // setting variables for each  photo
+      createModal(photos[i]);
 
-  try {
-    var _loop = function _loop() {
-      var photo = _step.value;
-
-      photo.children[0].addEventListener('click', function (e) {
-        e.preventDefault();
-        // setting variables for each  photo
-        createModal(photo);
-
-        var modal = document.getElementById('modal');
-        var dismissModal = document.getElementById('close-modal');
-        var modalBg = document.querySelector('.modal-bg');
-        dismissModal.addEventListener('click', function () {
-          var id = setInterval(frame, 1);
-          var count = 100;
-          function frame() {
-            if (count == 0) {
-              clearInterval(id);
-            } else {
-              count--;
-              modal.style.opacity = count / 100;
-              modalBg.style.opacity = count / 150;
-            }
+      var modal = document.getElementById('modal');
+      var dismissModal = document.getElementById('close-modal');
+      var modalBg = document.querySelector('.modal-bg');
+      dismissModal.addEventListener('click', function () {
+        var id = setInterval(frame, 1);
+        var count = 100;
+        function frame() {
+          if (count == 0) {
+            clearInterval(id);
+          } else {
+            count--;
+            modal.style.opacity = count / 100;
+            modalBg.style.opacity = count / 150;
           }
-          setTimeout(function () {
-            modal.style.top = '-100px';
-            modal.innerHTML = '';
-            modalBg.style.display = 'none';
-          }, 1000);
-        });
+        }
+        setTimeout(function () {
+          modal.style.top = '-100px';
+          modal.innerHTML = '';
+          modalBg.style.display = 'none';
+        }, 1000);
       });
-    };
+    });
+  };
 
-    for (var _iterator = photos[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-      _loop();
-    }
-  } catch (err) {
-    _didIteratorError = true;
-    _iteratorError = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion && _iterator.return) {
-        _iterator.return();
-      }
-    } finally {
-      if (_didIteratorError) {
-        throw _iteratorError;
-      }
-    }
+  for (var i = 0; i < photos.length; i++) {
+    _loop(i);
   }
 }
 addClickListener();
