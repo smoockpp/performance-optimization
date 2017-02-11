@@ -10,6 +10,7 @@
   align-items: center;
   padding: 1rem;
   height: auto;
+
   .logo {
       font-family: $stack-arvo-sans;
       font-size: 1rem;
@@ -17,6 +18,7 @@
       margin: 0;
       color: $color-link-default;
       overflow: hidden;
+      display: inline-block;
       b {
         line-height: inherit;
         color: $color-logo-b;
@@ -93,7 +95,7 @@
   }
   @media #{$brk-sm} {
     flex-direction: row;
-    justify-content: flex-end;
+
     flex-flow: row wrap;
     flex: 1;
     padding: 1.5rem 3rem;

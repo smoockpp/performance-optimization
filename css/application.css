@@ -63,7 +63,8 @@ a {
     line-height: 1;
     margin: 0;
     color: #485461;
-    overflow: hidden; }
+    overflow: hidden;
+    display: inline-block; }
     .menu .logo b {
       line-height: inherit;
       color: #2fabce;
@@ -127,7 +128,6 @@ a {
   @media only screen and (min-width: 768px) {
     .menu {
       flex-direction: row;
-      justify-content: flex-end;
       flex-flow: row wrap;
       flex: 1;
       padding: 1.5rem 3rem; } }
