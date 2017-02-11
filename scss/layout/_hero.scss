@@ -1,0 +1,39 @@
+/**************************
+*****   Hero Styles   *****
+**************************/
+
+.hero {
+  background: url("../img/photos/header-sm.jpg") no-repeat center center;
+  background-size: cover;
+  height: 60vh;
+  margin-bottom: 1rem;
+  padding: 1.5rem 3rem;
+  .info {
+      float: right;
+      margin-top: 47vh;
+      .attribution {
+          color: $color-attribution;
+          font-family: $stack-ubuntu-sans-serif;
+          font-size: 0.95rem;
+          float: left;
+          text-align: right;
+          b {
+              color: $color-attribution-b;
+              display: block;
+              font-weight: 500;
+          }
+      }
+      .avatar {
+          border-radius: 50%;
+          float: right;
+          height: 50px;
+          margin-left: 1rem;
+      }
+  }
+  @media #{$brk-sm} {
+    background: url("../img/photos/header-md.jpg") no-repeat center center;
+  }
+  @media #{$brk-md} {
+    background: url("../img/photos/header-lg.jpg") no-repeat center center;
+  }
+}

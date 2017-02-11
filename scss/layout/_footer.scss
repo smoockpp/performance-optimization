@@ -1,0 +1,22 @@
+footer {
+    @include clearfix;
+    width: 100%;
+    padding: 1.5rem 3rem;
+
+    p {
+        float: left;
+        color: $color-text-footer;
+        font-family: $stack-ubuntu-sans-serif;
+        font-size: 0.95rem;
+        font-weight: 300;
+        padding-top: 0.5rem;
+    }
+    .social {
+      float: right;
+            .social-icons {
+                height: 35px;
+                width: 35px;
+            }
+        }
+
+}

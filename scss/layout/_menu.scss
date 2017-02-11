@@ -1,0 +1,102 @@
+/**************************
+*****   Menu Styles   *****
+**************************/
+
+.menu {
+  background-color: $menu-bg-color;
+  font-family: $stack-arvo-sans;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  height: auto;
+  .logo {
+      font-family: $stack-arvo-sans;
+      font-size: 1rem;
+      line-height: 1;
+      margin: 0;
+      color: $color-link-default;
+      overflow: hidden;
+      b {
+        line-height: inherit;
+        color: $color-logo-b;
+        font-family: $stack-ubuntu-sans-serif;
+      }
+      @media #{$brk-sm} {
+        font-size: 2rem;
+      }
+      @media #{$brk-md} {
+        font-size: 3rem;
+      }
+  }
+  .menu-list {
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    list-style: none;
+    margin: 0 auto;
+    overflow: hidden;
+    li {
+      display: inline-block;
+      margin: 0;
+      a {
+          display: block;
+          transition: all .3s ease-in-out;
+          color: $color-link-default;
+          font-weight: bold;
+          letter-spacing: 0.125rem;
+          padding: .8rem 0 .5rem;
+          text-transform: uppercase;
+          &:hover {
+              color: $color-link-hover;
+          }
+      }
+      .active a {
+          color: $color-link-hover;
+      }
+      &:first-child {
+        margin-right: .7em;
+      }
+    }
+  }
+  .account {
+    margin: 0 10px 0 ;
+    li {
+        a {
+            border: 2px solid;
+            border-radius: .25rem;
+            color: $color-account-link;
+            font-family: $stack-ubuntu-sans-serif;
+            font-weight: 500;
+            letter-spacing: normal;
+            padding: 0.5rem 1.5rem;
+            text-transform: none;
+            &:hover {
+                background-color: $color-link-hover;
+                border-color: $color-link-hover;
+                color: $color-text-white;
+            }
+
+        }
+        @media #{$brk-sm} {
+          float: right;
+          margin: 5px 10px;
+        }
+    }
+    @media #{$brk-sm} {
+      flex-basis: 100%;
+    }
+    @media #{$brk-md} {
+      flex-basis: auto;
+    }
+  }
+  @media #{$brk-sm} {
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    flex: 1;
+    padding: 1.5rem 3rem;
+  }
+  @include clearfix;
+}

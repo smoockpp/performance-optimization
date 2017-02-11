@@ -1,0 +1,49 @@
+// Descriptive color variables
+
+$white          : #fff;
+$black          : #000;
+$porcelain      : #eff0f1;
+$porcelain2     : #ebeced;
+$river-bed      : #485461;
+$river-bed2     : #495560;
+$emerald        : #52ca6d;
+$slate-gray     : #7a8995;
+$slate-gray2    : #7B8895;
+$scooter        : #2fabce;
+$olso-gray      : #7d8892;
+$silver-chalice : #AAAAAA;
+
+// Functional color variables
+
+
+$menu-bg-color        : $porcelain;
+$border-info-bottom   : $slate-gray2;
+
+$color-text-white     : $white;
+$color-text-base      : $black;
+$color-logo-b         : $scooter;
+$color-attribution    : $porcelain2;
+$color-attribution-b  : $river-bed2;
+$color-text-footer    : $olso-gray;
+$color-link-default   : $river-bed;
+$color-link-hover     : $emerald;
+$color-account-link   : $slate-gray;
+$color-link-visited   : $black;
+$color-close-btn      : $silver-chalice;
+
+// Font stacks
+
+$stack-arvo-sans          : 'Arvo', serif;
+$stack-ubuntu-sans-serif  : 'Ubuntu', Helvetica, sans-serif;
+
+// Font variables
+
+$semibold	: 600;
+$lighter	: 400;
+
+
+// Media queries breakpoints
+$brk-sm          : 'only screen and (min-width: 768px)';
+$brk-md          : 'only screen and (min-width: 1024px)';
+$brk-wide     	 : '(min-width: 1024px)';
+$brk-full-width  : '(min-width: 1440px)';

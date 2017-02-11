@@ -1,0 +1,16 @@
+.row {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    &:before, &:after {
+    content: " ";
+    display: table;
+}
+}
+
+.columns {
+  position: relative;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  float: left;
+}

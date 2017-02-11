@@ -1,0 +1,82 @@
+.image-grid {
+    width: 100%;
+    h2 {
+        color: $river-bed2;
+        font-family: $stack-arvo-sans;
+        font-size: 1.5rem;
+        font-style: italic;
+        font-weight: normal;
+        text-indent: 1rem;
+    }
+    .row {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      margin-bottom: 1rem;
+      max-width: 320px;
+        .image {
+          padding: 0;
+          flex-basis: 100%;
+          max-width: 320px;
+          margin: 15px;
+          a {
+              border-radius: .5rem .5rem 0 0;
+              display: block;
+              min-width: 100%;
+              overflow: hidden;
+
+              height: 213px;
+              .image-img {
+                display: inline-block;
+                overflow: hidden;
+                text-indent: -9999px;
+                text-align: left;
+                background: url('../img/photos/image-sprite.jpg') no-repeat 0px 0px;
+                width: 320px;
+                height: 213px;
+              }
+          }
+          .info {
+              background-color: $white;
+              border-bottom: 2px solid;
+              border-bottom-color: $border-info-bottom;
+              border-radius: 0 0 .5rem .5rem;
+              padding: 1rem;
+
+              .avatar {
+                  border-radius: 50%;
+                  float: left;
+                  height: 50px;
+                  margin-right: 1rem;
+                  width: 50px;
+              }
+              .attribution {
+                  color: $color-attribution-b;
+                  font-family: $stack-ubuntu-sans-serif;
+                  font-size: 0.95rem;
+                  font-weight: normal;
+                  b {
+                      display: block;
+                      font-family: inherit;
+                      font-weight: 500;
+                  }
+              }
+          }
+
+        }
+        @media #{$brk-sm} {
+          max-width: 100%;
+          flex-direction: row;
+          flex: 1;
+          flex-flow: row wrap;
+        }
+    }
+}
+
+$photo-width: 320;
+@for $i from 1 through 8 {
+  span[data-target="img/photos/photo#{$i + 1}.jpg"] {
+    background: url('../img/photos/image-sprite.jpg') no-repeat -#{$i * $photo-width}px 0px !important;
+  }
+}
