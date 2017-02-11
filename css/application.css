@@ -181,6 +181,7 @@ a {
     text-indent: 1rem; }
   .image-grid .row {
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
