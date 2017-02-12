@@ -77,7 +77,7 @@
 
 $photo-width: 320;
 @for $i from 1 through 8 {
-  span[data-target="img/photos/photo#{$i + 1}.jpg"] {
+  span[data-target="img/photos/photo#{$i + 1}-md.jpg"] {
     background: url('../img/photos/image-sprite.jpg') no-repeat -#{$i * $photo-width}px 0px !important;
   }
 }

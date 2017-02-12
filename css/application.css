@@ -234,28 +234,28 @@ a {
         flex: 1;
         flex-flow: row wrap; } }
 
-span[data-target="img/photos/photo2.jpg"] {
+span[data-target="img/photos/photo2-md.jpg"] {
   background: url("../img/photos/image-sprite.jpg") no-repeat -320px 0px !important; }
 
-span[data-target="img/photos/photo3.jpg"] {
+span[data-target="img/photos/photo3-md.jpg"] {
   background: url("../img/photos/image-sprite.jpg") no-repeat -640px 0px !important; }
 
-span[data-target="img/photos/photo4.jpg"] {
+span[data-target="img/photos/photo4-md.jpg"] {
   background: url("../img/photos/image-sprite.jpg") no-repeat -960px 0px !important; }
 
-span[data-target="img/photos/photo5.jpg"] {
+span[data-target="img/photos/photo5-md.jpg"] {
   background: url("../img/photos/image-sprite.jpg") no-repeat -1280px 0px !important; }
 
-span[data-target="img/photos/photo6.jpg"] {
+span[data-target="img/photos/photo6-md.jpg"] {
   background: url("../img/photos/image-sprite.jpg") no-repeat -1600px 0px !important; }
 
-span[data-target="img/photos/photo7.jpg"] {
+span[data-target="img/photos/photo7-md.jpg"] {
   background: url("../img/photos/image-sprite.jpg") no-repeat -1920px 0px !important; }
 
-span[data-target="img/photos/photo8.jpg"] {
+span[data-target="img/photos/photo8-md.jpg"] {
   background: url("../img/photos/image-sprite.jpg") no-repeat -2240px 0px !important; }
 
-span[data-target="img/photos/photo9.jpg"] {
+span[data-target="img/photos/photo9-md.jpg"] {
   background: url("../img/photos/image-sprite.jpg") no-repeat -2560px 0px !important; }
 
 footer {
